@@ -1,0 +1,22 @@
+# Qué es este catálogo y a quién sirve.
+#
+# ES UN ÍNDICE DELGADO: no contiene ningún plugin, los referencia por git-subdir contra el
+# repositorio público de cada paquete, fijando un `ref`. Nada de lo que hay aquí se edita a
+# mano — `catalogos.py` lo deriva de los descriptores de los saberes.
+#
+# Publico: un contador o un abogado tributario tiene que poder resolverlo sin cuenta de GitHub.
+
+# El identificador que Claude Code exige: kebab-case, sin espacios. NO es el título — ese
+# vive en `descripcion`, que es lo que el cliente muestra.
+identificador: mindthecontext-tributario
+
+# Título legible. Sólo informativo dentro de este archivo.
+nombre: MindTheContext · Tributario
+descripcion: >-
+  Criterio tributario chileno con la fuente a la vista: cómo ha resuelto el SII, con la cita
+  literal, la vigencia declarada y los límites dichos.
+
+# La variante que sirve. Claude y Codex piden manifiestos distintos y el paquete publica las dos;
+# este catálogo elige una. Un catálogo para Codex es OTRO repositorio con `variante: codex`, no
+# un cambio en el script.
+variante: claude
